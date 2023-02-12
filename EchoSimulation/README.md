@@ -49,7 +49,7 @@ $$
 
 ### 2. 去斜 dechirp
 
-回波信号
+#### 回波信号
 
 - 点目标回波
 
@@ -63,7 +63,7 @@ $$
 s(t,i)=\sum_k\mathrm{rect}\left(\frac{t-iT_r-2R_k/c}{T_1}\right)\cdot\exp\left(j\pi\mu\left(t-iT_r-2R_k/c-2V_0t/c\right)^2\right)\cdot\exp\left(j2\pi f_i\left(t-iT_r-2R_k/c-2V_0t/c\right)\right)
 $$
 
-去斜信号
+#### 去斜信号
 
 - 参考信号
 
