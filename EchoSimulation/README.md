@@ -9,7 +9,10 @@
 
 ### 1. 频域方法生成回波 generate echo by frequency-domain approach
 
-- 发射波形 $s_n(t)=a_n(t)\exp(2\pi jf_nt),0<=t<T_r$
+- 发射波形 
+  $$
+  s_n(t)=a_n(t)\exp(2\pi jf_nt),0<=t<T_r
+  $$
 
 - 接收回波 
   $$
