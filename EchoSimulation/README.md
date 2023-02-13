@@ -14,5 +14,9 @@
 
 ## 样例 Examples
 
+* 基带波形 Basewave --- Chirp
+
+![Test Chirp](./images/Test_Basewave_Chirp.png)
+
 ## 用法
 
