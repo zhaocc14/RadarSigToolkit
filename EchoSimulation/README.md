@@ -16,7 +16,7 @@
 
 * 基带波形 Basewave --- Chirp
 
-![Test Chirp](./images/Test_Basewave_Chirp.png)
+![Test Chirp](./image/Test_Basewave_Chirp.png)
 
 ## 用法
 
