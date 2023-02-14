@@ -7,7 +7,7 @@ addpath(genpath(fullfile('..','..')))
 %% 读取RCS数据,包括 RCSData, frequency_samples, theta_samples, phi_samples
 % Load RCS mat, which contains RCSData, frequency_samples, theta_samples, phi_samples
 load('RCS_F22_S.mat')
-RCSData = RCSData*0+1;
+% RCSData = RCSData*0+1;
 
 %% 参数设置
 % Config parameters
@@ -76,7 +76,7 @@ end
 
 % 叠加噪声
 % Add noise
-echo_cpi_with_noise = echo_cpi + wgn(pulse_num, sample_points_num, 0, 'complex');
+echo_cpi_with_noise = echo_cpi + wgn(pulse_num, sample_points_num, -10, 'complex');
 
 % 脉冲压缩
 % Pulse compress
@@ -99,4 +99,8 @@ ONum = 4096;
 [Hrrp,xTickRange] = syn_hrrp(echo_freq_domain, conj_fft_basewave, ...
     R0, V0, freq_seq, pulse_start_time, freq_tick, ...
     sample_start_time, 0, pri, 0, 128);
-figure;plot(xTickRange, db(Hrrp./max(Hrrp))/2);
+figure;plot(xTickRange/1e3, db(Hrrp./max(Hrrp))/2);
+xlabel('距离 Range (km)')
+ylabel('幅度 Amplitude (dB)')
+grid on;
+title('HRRP')
