@@ -7,18 +7,18 @@ addpath(genpath(fullfile('..','..')))
 %% 读取RCS数据,包括 RCSData, frequency_samples, theta_samples, phi_samples
 % Load RCS mat, which contains RCSData, frequency_samples, theta_samples, phi_samples
 load('RCS_F22_S.mat')
-% RCSData = RCSData*0+1;
+RCSData = RCSData*0+1;
 
 %% 参数设置
 % Config parameters
 c = 2.99792458e8;
 pulse_num = 128;
-freq_num = 16;
-band_width = 20e6;
-freq_step = 20e6;
+freq_num = 8;
+band_width = 30e6;
+freq_step = 30e6;
 pulse_width = 20e-6;
 f0 = 2.72e9;
-fs = 20e6;
+fs = 30e6;
 pri = 200e-6;
 sample_start_time = 25e-6;
 sample_points_num = round((pri-sample_start_time)*fs);
