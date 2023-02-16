@@ -6,19 +6,13 @@ This repo is continuously being updated...
 This a toolkit for radar signal's simulation, processing, etc.
 
 ## 目录 Content
+* 回波仿真 Echo Simulation
+* 信号处理 Signal Processing
+   * 合成高分辨距离像 Synthesis HRRP
+   * 副瓣对消 Sidelobe Cancellation
+* 应用 Applications
 
-### 回波仿真 Echo Simulation
-
-#### 一些样例 Examples
-* 生成的回波 Simulated echo
-* 微多普勒 Micro Doppler
-* 高分辨距离像 High resolution range profile (HRRP)
-
-
-### 信号处理 Signal Processing
-
-#### 一些样例 Examples
-* 频率捷变雷达距离速度恢复 Range and velocity recovery by the RSF radar
+## 一些样例 Examples
 * [旁瓣对消 Sidelobe Cancellation](./SignalProcessing/SidelobeCancellation/)
   * 效果示例 Example
 ![Sidelobe_Cancellation](./SignalProcessing/SidelobeCancellation/image/Example_SidelobeCancellation.png)
